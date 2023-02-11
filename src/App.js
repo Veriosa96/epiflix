@@ -5,7 +5,7 @@ import FilmList from './componenti/FilmList';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: "#221f1f"}}>
       <NavBar/>
       <SecondNavBar/>
       <FilmList/>
