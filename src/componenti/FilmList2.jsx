@@ -25,9 +25,9 @@ class FilmList2 extends React.Component {
     
     render() {
         return (
-        <div className="container-fluid px-4 mx-3">
+        <div className="container-fluid px-4 mx-3" >
             <h4 className="d-flex justify-content-start">Trending Now</h4>
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 flex-nowrap no-gutters">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 py-4 flex-nowrap no-gutters" style={{overflow: "hidden"}}>
             {this.state.films.map((film) => {
                 return (
                 <div className="col mb-2 px-1">

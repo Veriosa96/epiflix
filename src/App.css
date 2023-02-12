@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -41,7 +42,10 @@
 body {
   margin: 0;
   background-color: #221f1f;
+  overflow-x: hidden;
+
 }
+
 
 h2,
 h4,
@@ -104,3 +108,4 @@ footer {
 .col img:hover {
   transform: scale(1.1);
 }
+

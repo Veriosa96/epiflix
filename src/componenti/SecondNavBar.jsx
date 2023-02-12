@@ -21,13 +21,12 @@ class SecondNavBar extends React.Component {
                 >
                   Genres &nbsp;
                 </button>
-                <div
-                  className="dropdown-menu bg-dark"
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  <a className="dropdown-item text-white bg-dark" href="alt">Comedy</a>
-                  <a className="dropdown-item text-white bg-dark" href="alt">Drama</a>
-                  <a className="dropdown-item text-white bg-dark" href="alt">Thriller</a>
+                <div className="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                    <ul>
+                      <li className="dropdown-item text-white bg-dark">Comedy</li>
+                      <li className="dropdown-item text-white bg-dark">Drama</li>
+                      <li className="dropdown-item text-white bg-dark">Thriller</li>
+                    </ul>
                 </div>
               </div>
             </div>
