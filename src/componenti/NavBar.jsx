@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import {Container,Nav,Navbar} from "react-bootstrap";
+import {Link} from "react-router-dom";
+
 
 // import NavDropdown from "react-bootstrap/NavDropdown";
 
@@ -8,24 +10,24 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" style={{backgroundColor: "#221f1f"}}>
       <Container className="m-0">
-        <img src={require("../assets/logo.png")} alt="logo-netflix" style={{width:"100px" ,height:"55px"}} />
+        <img src="/assets/logo.png" alt="logo-netflix" style={{width:"100px" ,height:"55px"}} />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className=" width-100 d-flex align-items-center justify-content-between">
           <Nav >
           <li className="nav-item active">
-              <a className="nav-link font-weight-bold text-secondary" href="alt">Home</a>
+              <Link to='/'  className="nav-link font-weight-bold text-secondary" href="alt">Home</Link>
             </li>
           <li className="nav-item active">
-              <a className="nav-link font-weight-bold text-secondary" href="alt">TV Shows</a>
+              <Link to='/SecondNavBar'className="nav-link font-weight-bold text-secondary" href="alt">TV Shows</Link>
             </li>
           <li className="nav-item active">
-              <a className="nav-link font-weight-bold text-secondary" href="alt">Movies</a>
+              <Link to='/SecondNavBar' className="nav-link font-weight-bold text-secondary" href="alt">Movies</Link>
             </li>
           <li className="nav-item active">
-              <a className="nav-link font-weight-bold text-secondary" href="alt">Recently Added</a>
+              <Link to='/SecondNavBar' className="nav-link font-weight-bold text-secondary" href="alt">Recently Added</Link>
             </li>
           <li className="nav-item active">
-              <a className="nav-link font-weight-bold text-secondary" href="alt">My List</a>
+              <Link to='/SecondNavBar' className="nav-link font-weight-bold text-secondary" href="alt">My List</Link>
             </li>
             
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
